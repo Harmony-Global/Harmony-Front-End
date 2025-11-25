@@ -43,7 +43,7 @@ const OurValues: React.FC = () => {
   ]
 
   return (
-    <section className="ourValues">
+    <section className="ourValues" id="values-section">
       <div className="container">
         <div className="heade">
           <h2 className="heading">Our Core Values</h2>

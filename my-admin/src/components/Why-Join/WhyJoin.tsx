@@ -85,7 +85,7 @@ const WhyJoinSection = () => {
   ]
 
   return (
-    <section className="why-join-section">
+    <section className="why-join-section" id="about-section">
       <div className="why-join-header">
         <h2 className="why-join-title">
           Why join <span className="highlight">Harmony?</span>

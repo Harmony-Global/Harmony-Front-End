@@ -21,17 +21,17 @@ export const CTASection: React.FC<CTASectionProps> = ({
   onSecondaryClick,
 }) => {
   return (
-    <section className="cta-section">
+    <section className="cta-section" id="join-section">
       <div className="container">
         <h2 className="heading">{title}</h2>
         <p className="description">{description}</p>
         <div className="button-group">
-          <button className="primary-btn1" onClick={onPrimaryClick}>
+           <a href="https://forms.gle/u793Wy62WqnY7gkk7"  className="primary-btn1" onClick={onPrimaryClick}>
             {primaryButtonText}
-          </button>
-          <button className="secondary-btn2" onClick={onSecondaryClick}>
+            </a>
+          <a href="https://forms.gle/dciUK8xhYaNGvyfy5" className="secondary-btn2" onClick={onSecondaryClick}>
             {secondaryButtonText}
-          </button>
+          </a>
         </div>
       </div>
     </section>

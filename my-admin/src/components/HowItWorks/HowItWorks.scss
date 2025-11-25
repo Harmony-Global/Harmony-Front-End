@@ -116,10 +116,11 @@
   flex-direction: column;
   gap: 80px;
 
-  @include m.responsive(desktop) {
-    gap: 120px;
+  @include m.responsive(tablet) {
+    display: none;
   }
 }
+
 
 .step-card {
   display: flex;
@@ -127,7 +128,7 @@
   align-items: center;
 
   @include m.responsive(tablet) {
-    flex-direction: row;
+    flex-direction: column;
     gap: 60px;
   }
 
@@ -253,3 +254,14 @@
     }
   }
 }
+
+.steps-container-mobile{
+  display: none;
+
+   @include m.responsive(tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+ 

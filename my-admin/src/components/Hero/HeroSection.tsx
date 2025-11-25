@@ -14,19 +14,19 @@ const HeroSection = () => {
   // Array of images for the slideshow
   const heroImages: HeroImage[] = [
     {
-      src: "../../../src/assets/hero1.png",
+      src: "../../../images/hero1.png",
       alt: "Professional with laptop",
     },
     {
-      src: "../../../src/assets/hero2.png",
+      src: "../../../images/hero2.png",
       alt: "Woman entrepreneur",
     },
     {
-      src: "../../../src/assets/hero3.png",
+      src: "../../../images/hero3.png",
       alt: "Creative professional",
     },
     {
-      src: "../../../src/assets/hero4.png",
+      src: "../../../images/hero4.png",
       alt: "Remote freelancer",
     },
   ];
@@ -41,7 +41,7 @@ const HeroSection = () => {
   }, [heroImages.length]);
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home-section">
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">
@@ -67,10 +67,10 @@ const HeroSection = () => {
             marketplaces, community-first and built on trust.
           </p>
           <div className="hero-actions">
-            <a href="#" className="btn btn-primary">
+            <a href="https://forms.gle/u793Wy62WqnY7gkk7"  className="btn btn-primary">
               Join our WhatsApp Community
             </a>
-            <a href="#" className="btn btn-secondary">
+            <a href="https://forms.gle/dciUK8xhYaNGvyfy5" className="btn btn-secondary">
               Hire Talent
             </a>
           </div>

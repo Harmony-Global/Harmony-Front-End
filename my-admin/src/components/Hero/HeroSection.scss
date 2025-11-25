@@ -19,7 +19,7 @@
     width: 50%;
     height: 100%;
     background: rgba(32, 36, 48, 1);
-    background-image: url('../../../src/assets/Pattern.png');
+    background-image: url('../../../images/Pattern.png');
     background-size: 130%;
     background-position: center;
     background-repeat: no-repeat;
@@ -207,7 +207,7 @@
 
     @include m.responsive(tablet) {
     height: 400px;
-    background-image: url('../../../src/assets/Pattern.png');
+    background-image: url('../../../images/Pattern.png');
     background-size: 130%;
     background-position: center;
     background-repeat: no-repeat;
