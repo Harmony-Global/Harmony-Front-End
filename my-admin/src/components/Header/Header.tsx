@@ -1,45 +1,51 @@
 "use client"
 
 import { useState } from "react"
-import { Link , useNavigate} from "react-router-dom"
-import {  Bell, LogOut } from "react-feather"
-import { useAuth } from "../../context/AuthContext"
+import { Link } from "react-router-dom"
 import "./Header.scss"
-import logo from "../../assets/HarmonyLog.png"
+import logo from "../../../public/images/HarmonyLog.png"
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
-  const { logout, user } = useAuth()
-  const navigate = useNavigate()
 
-  const handleLogout = () => {
-    logout()
-    navigate("/")
+   const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      })
+    }
+    // Close mobile menu after clicking a link
   }
+
+
+
 
   return (
     <header className="header">
       <div className="header-container">
         <div className="header-logo">
           <Link to="/dashboard">
-            <img src={logo || "/placeholder.svg"} alt="Lendsqr" />
+            <img src={logo || "/placeholder.svg"} alt="" />
           </Link>
         </div>
 
         <div className="header-actions">
-          <Link to="/docs" className="docs-link">
+          <Link to="/" className="docs-link" onClick={() => scrollToSection("home-section")}
+>
             Home
           </Link>
-          <Link to="/docs" className="docs-link">
+          <Link to="/" className="docs-link"  onClick={() => scrollToSection("about-section")}>
             About Us
           </Link>
-          <Link to="/docs" className="docs-link">
+          <Link to="/" className="docs-link" onClick={() => scrollToSection("how-it-works-section")}>
             How it works
           </Link>
-          <Link to="/docs" className="docs-link">
+          <Link to="/" className="docs-link"  onClick={() => scrollToSection("values-section")}>
             Values
           </Link>
-          <button className="notification-button">
+          <button className="notification-button" onClick={() => scrollToSection("join-section")}>
              Join
           </button>
          
@@ -54,21 +60,21 @@ const Header = () => {
 
       {showMobileMenu && (
         <div className="mobile-menu">
-          <Link to="/docs" className="mobile-menu-item">
-            Docs
+           <Link to="/" className="docs-link"   onClick={() => scrollToSection("home-section")}>
+            Home
           </Link>
-          <div className="mobile-menu-item notification">
-            <Bell size={20} />
-            <span>Notifications</span>
-          </div>
-          <div className="mobile-menu-item profile">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" />
-            <span>{user?.name || "User"}</span>
-          </div>
-           <div className="mobile-menu-item logout" onClick={handleLogout}>
-            <LogOut size={20} />
-            <span>Logout</span>
-          </div>
+          <Link to="/" className="docs-link" onClick={() => scrollToSection("about-section")}>
+            About Us
+          </Link>
+          <Link to="/" className="docs-link" onClick={() => scrollToSection("how-it-works-section")}>
+            How it works
+          </Link>
+          <Link to="/" className="docs-link" onClick={() => scrollToSection("values-section")}>
+            Values
+          </Link>
+          <button className="notification-button" onClick={() => scrollToSection("join-section")}>
+             Join
+          </button>
         </div>
       )}
     </header>

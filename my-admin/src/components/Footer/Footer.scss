@@ -1,0 +1,172 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+.footer {
+  background-color: v.$secondary-color;
+  color: white;
+  padding: 60px 0 30px;
+
+  @include m.responsive('mobile') {
+    padding: 40px 0 20px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+ 
+  margin-bottom: 40px;
+
+
+  @include m.responsive('mobile') {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include m.responsive('tablet') {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+
+  @include m.responsive('mobile') {
+    min-width: 100%;
+  }
+}
+
+// Logo Section
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background-color: v.$primary-color;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+// Column Titles
+.columnTitle {
+  font-size: 18px;
+  font-family: 'ADLaM Display', sans-serif;
+  font-weight: 600;
+  text-align: start;
+  margin-bottom: 10px;
+  color: white;
+}
+
+// Links
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  text-align: start;
+ 
+
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: lighter;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// Contact Info
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+   line-height: 40px;
+  text-align: start;
+  gap: 16px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+}
+
+// Social Media
+.socialLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background-color: v.$primary-color;
+    transform: translateY(-2px);
+  }
+}
+
+// Copyright
+.copyright {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+
+  p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin: 0;
+  }
+}
