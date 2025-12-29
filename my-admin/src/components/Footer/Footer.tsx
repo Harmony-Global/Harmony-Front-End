@@ -18,22 +18,24 @@ export default function Footer() {
             <h3 className="columnTitle">Quick Links</h3>
             <ul className="linkList">
               <li>
-                <a href="#home">Home</a>
+                <a href="https://forms.gle/u793Wy62WqnY7gkk7">Service Providers</a>
               </li>
               <li>
-                <a href="#about">About Us</a>
+                <a href="https://wa.me/+2347063286167">Support</a>
               </li>
               <li>
-                <a href="#how-it-works">How It Works</a>
+                <a href="https://forms.gle/dciUK8xhYaNGvyfy5">Service Seekers</a>
               </li>
               <li>
-                <a href="#values">Values</a>
+                <a href="/FAQ">FAQ</a>
               </li>
               <li>
-                <a href="#join">Join Community</a>
+                <a href="https://paystack.shop/pay/harmonyglobal">Make Payment</a>
               </li>
             </ul>
           </div>
+
+          
 
           {/* Contact Info */}
           <div className="column">
@@ -57,7 +59,7 @@ export default function Footer() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <span>Lagos</span>
+                <span>Lagos, Nigeria</span>
               </li>
             </ul>
           </div>

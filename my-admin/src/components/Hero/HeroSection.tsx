@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import "./HeroSection.scss";
 
 interface HeroImage {
@@ -45,7 +46,7 @@ const HeroSection = () => {
       <div className="container">
         <div className="hero-content">
           <h1 className="hero-title">
-          One Platform, Where Connections Unlock{" "}
+            One Platform, Where Connections Unlock{" "}
             <span className="highlight">
               Endless Opportunities
               <svg
@@ -67,11 +68,17 @@ const HeroSection = () => {
             marketplaces, community-first and built on trust.
           </p>
           <div className="hero-actions">
-            <a href="https://forms.gle/u793Wy62WqnY7gkk7"  className="btn btn-primary">
-              Join our WhatsApp Community
+            <a
+              href="https://forms.gle/u793Wy62WqnY7gkk7"
+              className="btn btn-primary"
+            >
+              Service Providers
             </a>
-            <a href="https://forms.gle/dciUK8xhYaNGvyfy5" className="btn btn-secondary">
-              Hire Talent
+            <a
+              href="https://forms.gle/dciUK8xhYaNGvyfy5"
+              className="btn btn-secondary"
+            >
+              Service Seekers
             </a>
           </div>
           <p className="hero-note">
@@ -91,13 +98,34 @@ const HeroSection = () => {
             ))}
           </div>
 
-          <div className="community-badge">
-            <div className="badge-title">Early community</div>
+          <a
+            href="https://wa.me/+2347063286167"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="community-badge whatsapp"
+            aria-label="Chat with us on WhatsApp"
+          >
+            <div className="badge-header">
+              <FaWhatsapp className="whatsapp-icon"color="" />
+              <span className="badge-title">Community Support</span>
+            </div>
+
             <div className="badge-description">
               Founders, freelancers, and hiring teams sharing tips, gigs, and
               events.
             </div>
-          </div>
+
+            <div className="badge-cta">Chat on WhatsApp →</div>
+          </a>
+          <a
+            href="https://wa.me/+2347063286167" // replace with your number
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-fab"
+            aria-label="Chat with us on WhatsApp"
+          >
+            <FaWhatsapp color=""/>
+          </a>
         </div>
       </div>
     </section>

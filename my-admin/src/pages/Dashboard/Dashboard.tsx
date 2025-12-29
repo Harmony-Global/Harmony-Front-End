@@ -5,6 +5,7 @@ import OurValues from '../../components/Values/Values';
 import WhyJoinSection from '../../components/Why-Join/WhyJoin';
 import Footer from '../../components/Footer/Footer';
 import './Dasboard.scss'
+import PaymentSection from '../../components/Payments/PaymentSection';
 
 const Dashboard = () => {
   return (
@@ -14,6 +15,7 @@ const Dashboard = () => {
       <HowItWorksSection />
       <CTASection />
       <OurValues />
+      <PaymentSection/>
       <Footer />
     </div>
   );

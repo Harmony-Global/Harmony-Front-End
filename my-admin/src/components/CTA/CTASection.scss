@@ -81,7 +81,7 @@
 
 
   &:hover {
-    background-color: rgba(v.$primary-color, 0.08);
+    background-color: #0C5ADB;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(v.$primary-color, 0.3);
   }
@@ -112,7 +112,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
-  width: 121px;
+  width: auto;
 
   &:hover {
     background-color: rgba(v.$primary-color, 0.05);

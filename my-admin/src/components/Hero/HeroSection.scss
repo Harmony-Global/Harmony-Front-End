@@ -2,6 +2,24 @@
 @use '../../styles/mixins' as m;
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
 
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #0066FF }
+  70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 .hero-section {
   background: rgba(32, 36, 48, 1);
   min-height: 100vh;
@@ -249,38 +267,107 @@
       }
     }
 
-    .community-badge {
-      position: fixed;
-      bottom: 40px;
-      right: 40px;
-      background: white;
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-      z-index: 100;
-      max-width: 240px;
+   .community-badge {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  max-width: 240px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-      @include m.responsive(desktop) {
-        bottom: 20px;
-        right: 20px;
-      }
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  }
 
-      @include m.responsive(mobile) {
-        display: none;
-      }
+  @include m.responsive(desktop) {
+    bottom: 20px;
+    right: 20px;
+  }
 
-      .badge-title {
-        font-size: 0.875rem;
-        font-weight: 700;
-        color: #2c3e50;
-        margin-bottom: 0.25rem;
-      }
+  @include m.responsive(mobile) {
+    display: none;
+  }
 
-      .badge-description {
-        font-size: 0.75rem;
-        color: v.$text-muted;
-        line-height: 1.4;
-      }
-    }
+  .badge-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .badge-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+
+  .badge-description {
+    font-size: 0.75rem;
+    color: v.$text-muted;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  .badge-cta {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0066FF;
+  }
+}
+
+/* WhatsApp-specific accent */
+.community-badge.whatsapp {
+  border-left: 4px solid #0066FF;
+ animation: pulse 2.5s ease-in-out infinite;
+
+  .whatsapp-icon {
+    color: #0066FF;
+    font-size: 1.25rem;
+  }
+}
+
+.whatsapp-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  background-color: #0066FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+  z-index: 200;
+  display: none;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.4s ease-out;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:active {
+    transform: scale(0.92);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  // Hide on desktop
+  @include m.responsive(desktop) {
+    display: none;
+  }
+
+    @include m.responsive(mobile) {
+    display: flex;
+  }
+}
+
+
   }
 }

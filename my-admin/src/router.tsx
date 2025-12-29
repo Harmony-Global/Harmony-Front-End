@@ -5,6 +5,7 @@ import Users from "./pages/Users/Users";
 import UserDetails from "./pages/UserDetails/UserDetails";
 import Layout from "./components/Layout/Layout";
 import { AuthProvider } from "./context/AuthContext";
+import FAQPage from "./pages/FAQ/FAQSection";
 
 
 function Routing() {
@@ -17,6 +18,7 @@ function Routing() {
           <Route path="/users" element={<Users />} />
           <Route path="/users/:id" element={<UserDetails />} />
         </Route>
+          <Route path="/FAQ" element={<FAQPage />} />
       </Routes>
        <Toaster
       />

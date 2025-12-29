@@ -15,8 +15,8 @@ interface CTASectionProps {
 export const CTASection: React.FC<CTASectionProps> = ({
   title = "Ready to join a trusted community for professionals?",
   description = "Be part of Harmony's early adopters – network, find gigs, and grow together.",
-  primaryButtonText = "Join our WhatsApp Community",
-  secondaryButtonText = "Hire Talent",
+  primaryButtonText = "Service Providers",
+  secondaryButtonText = "Service Seekers",
   onPrimaryClick,
   onSecondaryClick,
 }) => {

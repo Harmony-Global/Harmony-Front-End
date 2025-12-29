@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #0066FF }
+  70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.payment-section {
+  background: linear-gradient(135deg, rgba(12, 90, 219, 0.05) 0%, rgba(12, 90, 219, 0.02) 100%);
+  padding: 60px 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Removed decorative background element (.payment-section::before) */
+
+.payment-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.payment-content {
+  background: white;
+  border-radius: 24px;
+  padding: 40px 24px; /* Updated from 32px 24px */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(12, 90, 219, 0.1);
+  text-align: center;
+}
+
+.payment-heading {
+  font-family: "ADLaM Display", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.payment-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 32px; /* Updated from 24px */
+  line-height: 1.6;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Removed price-tag, features-list, and related styles */
+
+.payment-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.payment-btn {
+  background: linear-gradient(135deg, #0c5adb 0%, #0a4bb8 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 320px;
+  justify-content: center;
+  animation: pulse 2.5s ease-in-out infinite;
+  box-shadow: 0 4px 16px rgba(12, 90, 219, 0.3);
+}
+
+.payment-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(12, 90, 219, 0.4);
+}
+
+.payment-btn:active {
+  transform: translateY(-1px);
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.payment-btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* Removed secure-note and lock-icon styles */
+
+/* Tablet styles (768px and up) */
+@media (min-width: 768px) {
+  .payment-section {
+    padding: 80px 20px;
+  }
+
+  .payment-content {
+    padding: 48px 32px; /* Updated from 40px 32px */
+    border-radius: 28px;
+  }
+
+  .payment-heading {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .payment-description {
+    font-size: 15px;
+    margin-bottom: 36px; /* Updated from 28px */
+  }
+
+  /* Removed price-tag, price-text, features-list, feature-item, check-icon, secure-note, lock-icon styles for tablet */
+
+  .payment-btn {
+    padding: 18px 40px;
+    font-size: 17px;
+  }
+}
+
+/* Desktop styles (1024px and up) */
+@media (min-width: 1024px) {
+  .payment-section {
+    padding: 100px 20px;
+  }
+
+  .payment-content {
+    padding: 56px 40px; /* Updated from 48px 40px */
+    border-radius: 32px;
+  }
+
+  .payment-heading {
+    font-size: 36px;
+  }
+
+  .payment-description {
+    font-size: 16px;
+    margin-bottom: 40px; /* Updated from 32px */
+  }
+
+  /* Removed price-text, features-list, feature-item styles for desktop */
+
+  .payment-btn {
+    font-size: 18px;
+    padding: 20px 48px;
+  }
+}

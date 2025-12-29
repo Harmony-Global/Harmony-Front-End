@@ -46,7 +46,7 @@ const Header = () => {
             Values
           </Link>
           <button className="notification-button" onClick={() => scrollToSection("join-section")}>
-             Join
+             Connect
           </button>
          
         </div>
@@ -73,7 +73,7 @@ const Header = () => {
             Values
           </Link>
           <button className="notification-button" onClick={() => scrollToSection("join-section")}>
-             Join
+             Connect
           </button>
         </div>
       )}
