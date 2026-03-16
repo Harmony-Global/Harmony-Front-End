@@ -8,8 +8,8 @@ export default function Footer() {
           {/* Logo Section */}
           <div className="column">
             <div className="logo">
-              <div className="logoIcon">H</div>
-              <span className="logoText">Harmony</span>
+              <div className="logoIcon">A</div>
+              <span className="logoText">Accordia</span>
             </div>
           </div>
 
@@ -18,13 +18,13 @@ export default function Footer() {
             <h3 className="columnTitle">Quick Links</h3>
             <ul className="linkList">
               <li>
-                <a href="https://forms.gle/u793Wy62WqnY7gkk7">Service Providers</a>
+                <a href="https://forms.gle/Fwgg12UhzurjTN1R8">Service Providers</a>
               </li>
               <li>
                 <a href="https://wa.me/+2347063286167">Support</a>
               </li>
               <li>
-                <a href="https://forms.gle/dciUK8xhYaNGvyfy5">Service Seekers</a>
+                <a href="https://forms.gle/FjWA89y1eNJ5GT2T6">Service Seekers</a>
               </li>
               <li>
                 <a href="/FAQ">FAQ</a>
@@ -52,7 +52,7 @@ export default function Footer() {
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
-                <span>teamharmonyconnect@gmail.com</span>
+                <span>support.accordia@gmail.com</span>
               </li>
                 <li className="contactItem">
                 <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

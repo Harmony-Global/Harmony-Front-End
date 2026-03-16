@@ -64,18 +64,18 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="hero-description">
-            Harmony mixes the best of professional networking and freelance
+            Accordia mixes the best of professional networking and freelance
             marketplaces, community-first and built on trust.
           </p>
           <div className="hero-actions">
             <a
-              href="https://forms.gle/u793Wy62WqnY7gkk7"
+              href="https://forms.gle/Fwgg12UhzurjTN1R8"
               className="btn btn-primary"
             >
               Service Providers
             </a>
             <a
-              href="https://forms.gle/dciUK8xhYaNGvyfy5"
+              href="https://forms.gle/FjWA89y1eNJ5GT2T6"
               className="btn btn-secondary"
             >
               Service Seekers

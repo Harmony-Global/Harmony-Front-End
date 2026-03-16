@@ -14,7 +14,7 @@ const HowItWorksSection: React.FC = () => {
   return (
     <section className="how-it-works-section" id="how-it-works-section">
       <div className="how-it-works-header">
-        <h2 className="section-title">How Harmony Works</h2>
+        <h2 className="section-title">How Accordia Works</h2>
         <p className="section-subtitle">A simple way to connect, collaborate, and grow your career or business.</p>
         <div className="process-flow">
           {processSteps.map((step, index) => (
@@ -126,7 +126,7 @@ const HowItWorksSection: React.FC = () => {
             </div>
             <h3 className="step-title">Join the Community</h3>
             <p className="step-description">
-              Start by joining Harmony's trusted network of professionals, freelancers, and businesses.
+              Start by joining Accordia's trusted network of professionals, freelancers, and businesses.
             </p>
             <ul className="step-features">
               <li>

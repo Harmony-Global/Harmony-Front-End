@@ -88,7 +88,7 @@ const WhyJoinSection = () => {
     <section className="why-join-section" id="about-section">
       <div className="why-join-header">
         <h2 className="why-join-title">
-          Why join <span className="highlight">Harmony?</span>
+          Why join <span className="highlight">Accordia?</span>
         </h2>
         <p className="why-join-subtitle">
           Experience a platform designed for genuine professional growth, where trust and community come first.

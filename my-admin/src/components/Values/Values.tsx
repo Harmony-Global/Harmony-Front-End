@@ -47,7 +47,7 @@ const OurValues: React.FC = () => {
       <div className="container">
         <div className="heade">
           <h2 className="heading">Our Core Values</h2>
-          <p className="subtitle">The principles that guide everything we do at Harmony</p>
+          <p className="subtitle">The principles that guide everything we do at Accordia</p>
         </div>
 
         <div className="valuesGrid">

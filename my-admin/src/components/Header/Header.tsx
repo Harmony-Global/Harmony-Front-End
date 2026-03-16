@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./Header.scss"
-import logo from "../../../public/images/HarmonyLog.png"
+import logo from "../../../public/images/Accordia Full Logo Large.png"
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -27,7 +27,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-logo">
           <Link to="/dashboard">
-            <img src={logo || "/placeholder.svg"} alt="" />
+            <img src={logo || "/placeholder.svg"} alt=""  />
           </Link>
         </div>
 
