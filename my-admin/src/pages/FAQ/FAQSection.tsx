@@ -1,7 +1,7 @@
 "use client"
 import { ArrowLeft } from "react-feather"
 import Accordion from "../../components/Accordion/Accordion"
-import logo from "../../../public/images/HarmonyLog.png"
+import logo from "../../../public/images/Accordia.png"
 import './FAQSection.scss'
 
 export default function FAQPage() {
@@ -52,7 +52,7 @@ export default function FAQPage() {
           <div className="faq-logo">
 
            <a href="/" className="faq-back-link">
-           <img src={logo || "/placeholder.svg"} alt="" />
+           <img src={logo || "/placeholder.svg"} alt="" width={200}/>
             </a>
           </div>
         </div>

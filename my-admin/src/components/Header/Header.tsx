@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./Header.scss"
-import logo from "../../../public/images/Accordia Full Logo Large.png"
+import logo from "../../../public/images/Accordia.png"
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
