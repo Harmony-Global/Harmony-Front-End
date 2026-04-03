@@ -107,7 +107,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="copyright">
-          <p>&copy; 2026 Harmony - Integrity &middot; Community &middot; Opportunity</p>
+          <p>&copy; 2026 Accordia - Integrity &middot; Community &middot; Opportunity</p>
         </div>
       </div>
     </footer>
