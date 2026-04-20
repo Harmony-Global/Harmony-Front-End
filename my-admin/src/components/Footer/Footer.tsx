@@ -90,7 +90,7 @@ export default function Footer() {
                   <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.89h-2.32v6.99A10 10 0 0 0 22 12z" />
                 </svg>
               </a>
-              <a
+              {/* <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -100,7 +100,19 @@ export default function Footer() {
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M16 2H8a6 6 0 0 0-6 6v8a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6zm4 14a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8zm-8-9a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.5-8.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" />
                 </svg>
+              </a> */}
+              <a
+                href="https://x.com/accordia_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="socialIcon"
+                aria-label="X"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2H21l-6.016 6.874L22 22h-5.828l-4.563-6.617L5.82 22H3.06l6.434-7.353L2 2h5.976l4.124 5.983L18.244 2zm-.968 18h1.527L7.149 3.895H5.51L17.276 20z" />
+                </svg>
               </a>
+              
             </div>
           </div>
         </div>
