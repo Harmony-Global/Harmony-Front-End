@@ -468,7 +468,7 @@ const HowItWorksSection: React.FC = () => {
             </div>
             <h3 className="step-title">Join the Community</h3>
             <p className="step-description">
-              Start by joining Harmony's trusted network of professionals, freelancers, and businesses.
+              Start by joining Accordia's trusted network of professionals, freelancers, and businesses.
             </p>
             <ul className="step-features">
               <li>

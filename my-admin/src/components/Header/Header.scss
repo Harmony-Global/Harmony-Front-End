@@ -22,11 +22,28 @@
   }
   
   &-logo {
+    flex-shrink: 0;
+    width: 180px;
+    height: 46px;
+    overflow: hidden;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
     img {
-      height: 30px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: left center;
       
       @include m.responsive(mobile) {
-        height: 24px;
+        width: 145px;
+        height: 38px;
       }
     }
   }
@@ -88,14 +105,26 @@
     }
     
     .notification-button {
-      color: v.$secondary-color;
+      color: #ffffff;
       border-radius: 999px;
-      border: 2px solid v.$primary-color;
-      font-size: 16px;
+      border: 1px solid transparent;
+      background: linear-gradient(135deg, #2155A3 0%, #0F2748 100%);
+      font-size: 15px;
       font-weight: 600;
-      padding: 5px 8px;
-      height: 34px;
+      padding: 8px 16px;
+      min-height: 38px;
       width: auto;
+      box-shadow: 0 8px 20px rgba(15, 39, 72, 0.2);
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(15, 39, 72, 0.25);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
     }
     
     .user-profile {
@@ -148,14 +177,15 @@
     }
 
      .notification-button {
-      color: v.$secondary-color;
+      color: #ffffff;
       border-radius: 999px;
-      border: 1px solid v.$primary-color;
-      font-size: 16px;
+      border: 1px solid transparent;
+      background: linear-gradient(135deg, #2155A3 0%, #0F2748 100%);
+      font-size: 15px;
       font-weight: 600;
-      padding: 5px 5px;
-      height: 34px;
-      width: 85px;
+      padding: 8px 14px;
+      min-height: 38px;
+      width: fit-content;
     }
     
     &-item {
