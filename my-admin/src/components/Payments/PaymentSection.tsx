@@ -14,7 +14,7 @@ export const PaymentSection: React.FC<PaymentSectionProps> = ({
   title = "Ready to Get Started?",
   description = "Complete your payment securely with our partner.",
   buttonText = "Proceed to Payment",
-  paymentLink = "https://paystack.shop/pay/harmonyglobal",
+  paymentLink = "https://paystack.shop/pay/accordiaapp",
 }) => {
   return (
     <section className="payment-section" id="payment-section">

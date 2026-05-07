@@ -1,8 +1,9 @@
 "use client"
 import { ArrowLeft } from "react-feather"
 import Accordion from "../../components/Accordion/Accordion"
-import logo from "../../../public/images/Accordia.png"
 import './FAQSection.scss'
+
+const logo = "/images/Accordia.png"
 
 export default function FAQPage() {
   const faqs = [
