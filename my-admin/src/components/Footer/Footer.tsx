@@ -32,7 +32,7 @@ export default function Footer() {
                 <a href="/FAQ">FAQ</a>
               </li>
               <li>
-                <a href="https://paystack.shop/pay/harmonyglobal">Make Payment</a>
+                <a href="https://paystack.shop/pay/accordiaappservicepay">Make Payment</a>
               </li>
             </ul>
           </div>
