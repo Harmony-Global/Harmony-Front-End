@@ -8,8 +8,10 @@ export default function Footer() {
           {/* Logo Section */}
           <div className="column">
             <div className="logo">
-              <div className="logoIcon">A</div>
-              <span className="logoText">Accordia</span>
+              <div className="logoIcon">
+                <img src="/images/Accordia%20Logomark%20Transparent.png" alt="" />
+              </div>
+              <span className="logoText">ccordia</span>
             </div>
           </div>
 
