@@ -15,8 +15,8 @@ interface CTASectionProps {
 export const CTASection: React.FC<CTASectionProps> = ({
   title = "Ready to join a trusted community for professionals?",
   description = "Be part of Accordia's early adopters – network, find gigs, and grow together.",
-  primaryButtonText = "Service Providers",
-  secondaryButtonText = "Service Seekers",
+  primaryButtonText = "Professionals",
+  secondaryButtonText = "Clients",
   onPrimaryClick,
   onSecondaryClick,
 }) => {
@@ -26,10 +26,10 @@ export const CTASection: React.FC<CTASectionProps> = ({
         <h2 className="heading">{title}</h2>
         <p className="description">{description}</p>
         <div className="button-group">
-           <a href="https://forms.gle/Fwgg12UhzurjTN1R8"  className="primary-btn1" onClick={onPrimaryClick}>
+           <a href="https://forms.gle/Hg1XgMricPJsgDfz5"  className="primary-btn1" onClick={onPrimaryClick}>
             {primaryButtonText}
             </a>
-          <a href="https://forms.gle/FjWA89y1eNJ5GT2T6" className="secondary-btn2" onClick={onSecondaryClick}>
+          <a href="https://forms.gle/Yg7tg6dyusdBkJ3L8 " className="secondary-btn2" onClick={onSecondaryClick}>
             {secondaryButtonText}
           </a>
         </div>

@@ -20,20 +20,20 @@ export default function Footer() {
             <h3 className="columnTitle">Quick Links</h3>
             <ul className="linkList">
               <li>
-                <a href="https://forms.gle/Fwgg12UhzurjTN1R8">Service Providers</a>
+                <a href="https://forms.gle/Hg1XgMricPJsgDfz5">Professionals</a>
               </li>
               <li>
                 <a href="https://wa.me/+2347063286167">Support</a>
               </li>
               <li>
-                <a href="https://forms.gle/FjWA89y1eNJ5GT2T6">Service Seekers</a>
+                <a href="https://forms.gle/Yg7tg6dyusdBkJ3L8">Clients</a>
               </li>
               <li>
                 <a href="/FAQ">FAQ</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="https://paystack.shop/pay/accordiaappservicepay">Make Payment</a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

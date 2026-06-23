@@ -46,9 +46,14 @@ const Header = () => {
           <Link to="/" className="docs-link"  onClick={() => scrollToSection("values-section")}>
             Values
           </Link>
-          <button className="notification-button" onClick={() => scrollToSection("join-section")}>
+          <a
+            className="notification-button"
+            href="https://accordiaweb.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
              Connect
-          </button>
+          </a>
          
         </div>
 
@@ -73,9 +78,15 @@ const Header = () => {
           <Link to="/" className="docs-link" onClick={() => scrollToSection("values-section")}>
             Values
           </Link>
-          <button className="notification-button" onClick={() => scrollToSection("join-section")}>
+          <a
+            className="notification-button"
+            href="https://accordiaweb.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setShowMobileMenu(false)}
+          >
              Connect
-          </button>
+          </a>
         </div>
       )}
     </header>
