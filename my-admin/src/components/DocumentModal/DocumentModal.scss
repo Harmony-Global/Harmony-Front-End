@@ -1,0 +1,80 @@
+@use '../../styles/variables' as v;
+
+.documentModal {
+  position: fixed;
+  inset: 0;
+  width: min(1000px, calc(100vw - 32px));
+  height: min(850px, calc(100vh - 32px));
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: white;
+  color: #1f2937;
+  overflow: hidden;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.documentModal__panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.documentModal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5e7eb;
+
+  h2 {
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.documentModal__close {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #374151;
+  font: inherit;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background: #f3f4f6;
+    color: v.$primary-color;
+  }
+}
+
+.documentModal__viewer {
+  width: 100%;
+  flex: 1;
+  border: 0;
+  background: #f3f4f6;
+}
+
+.documentModal__fallback {
+  margin: 0;
+  padding: 8px 18px;
+  font-size: 13px;
+  text-align: center;
+
+  a {
+    color: v.$primary-color;
+  }
+}

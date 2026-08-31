@@ -1,6 +1,15 @@
+import { useState } from "react"
+import DocumentModal from "../DocumentModal/DocumentModal"
 import "./Footer.scss"
 
+type LegalDocument = {
+  title: string
+  url: string
+}
+
 export default function Footer() {
+  const [activeDocument, setActiveDocument] = useState<LegalDocument | null>(null)
+
   return (
     <footer className="footer">
       <div className="container">
@@ -37,7 +46,36 @@ export default function Footer() {
             </ul>
           </div>
 
-          
+          {/* Legal Documents */}
+          <div className="column">
+            <h3 className="columnTitle">Legal</h3>
+            <ul className="linkList">
+              <li>
+                <button
+                  type="button"
+                  className="footerLinkButton"
+                  onClick={() => setActiveDocument({
+                    title: "Terms of Service",
+                    url: "/images/Accordia%20Terms%20of%20Service.pdf",
+                  })}
+                >
+                  Terms of Service
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  className="footerLinkButton"
+                  onClick={() => setActiveDocument({
+                    title: "Privacy Policy",
+                    url: "/images/Accordia%20Privacy%20Policy.pdf",
+                  })}
+                >
+                  Privacy Policy
+                </button>
+              </li>
+            </ul>
+          </div>
 
           {/* Contact Info */}
           <div className="column">
@@ -124,6 +162,12 @@ export default function Footer() {
           <p>&copy; 2026 Accordia - Integrity &middot; Community &middot; Opportunity</p>
         </div>
       </div>
+      <DocumentModal
+        isOpen={activeDocument !== null}
+        title={activeDocument?.title ?? "Legal document"}
+        documentUrl={activeDocument?.url ?? ""}
+        onClose={() => setActiveDocument(null)}
+      />
     </footer>
   )
 }
