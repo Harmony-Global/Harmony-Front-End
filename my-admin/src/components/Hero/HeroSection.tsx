@@ -69,16 +69,16 @@ const HeroSection = () => {
           </p>
           <div className="hero-actions">
             <a
-              href="https://forms.gle/Fwgg12UhzurjTN1R8"
+              href="https://forms.gle/Hg1XgMricPJsgDfz5"
               className="btn btn-primary"
             >
-              Service Providers
+              Professionals
             </a>
             <a
-              href="https://forms.gle/FjWA89y1eNJ5GT2T6"
+              href="https://forms.gle/Yg7tg6dyusdBkJ3L8 "
               className="btn btn-secondary"
             >
-              Service Seekers
+              Clients
             </a>
           </div>
           <p className="hero-note">
