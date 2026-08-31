@@ -108,6 +108,23 @@
   }
 }
 
+.footerLinkButton {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.8);
+  font: inherit;
+  font-size: 16px;
+  font-weight: lighter;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: white;
+  }
+}
+
 // Contact Info
 .contactList {
   list-style: none;
